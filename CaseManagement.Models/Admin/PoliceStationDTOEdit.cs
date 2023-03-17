@@ -1,0 +1,18 @@
+﻿using Newtonsoft.Json;
+
+namespace CaseManagement.Models.Admin
+{
+    public class PoliceStationDTOEdit
+    {
+        public int PoliceStationCode { get; set; }
+        public string PoliceStationName { get; set; }
+        public string Address { get; set; }
+        public int DistrictCode { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+    }
+}

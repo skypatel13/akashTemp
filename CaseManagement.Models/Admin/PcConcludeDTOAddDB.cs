@@ -1,0 +1,20 @@
+﻿using Newtonsoft.Json;
+using System;
+
+namespace CaseManagement.Models.Admin
+{
+    public class PcConcludeDTOAddDB
+    {
+        public int pcCode { get; set; }
+        public DateTime ConcludedDate { get; set; }
+        public int ConcludedReasonCode { get; set; }
+        public string ConcludedNotes { get; set; }
+        public string ConcludedBy { get; set; }
+        public string ConcludedByIpAddress { get; set; }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+    }
+}
