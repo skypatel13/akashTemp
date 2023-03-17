@@ -16,8 +16,8 @@ namespace CaseManagement.API.Extensions
                 options.AddPolicy(MyAllowSpecificOrigins,
                     builder =>
                     {
-                        //builder.WithOrigins().AllowAnyHeader().AllowAnyMethod().AllowCredentials();
-                        builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                        builder.WithOrigins().AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                        //builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
                     });
             });
         }
